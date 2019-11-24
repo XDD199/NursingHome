@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/basic_menu"
+        android:title="基本信息"
+        ></item>
+
+    <!--定义一个普通菜单项-->
+    <item
+        android:id="@+id/health_menu"
+        android:title="健康记录"/>
+
+    <item
+        android:id="@+id/care_munu"
+        android:title="护理记录"></item>
+</menu>

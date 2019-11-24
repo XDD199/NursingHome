@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BasicActivity">
+
+    <include layout="@layout/title"></include>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always"
+        android:shrinkColumns="0,1,2,3">
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:text="姓名"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_weight="3"
+                android:text="刘老人"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:text="性别"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:text="男"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_width="26dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="出生日期"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="1960年11月24日"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="联系电话"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="12345678901"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="身份证号码"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="2333333333333333333"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="户籍地"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="浙江杭州"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="居住地"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="浙江杭州"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="监护人"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="刘老大"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:text="监护人联系电话"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="6"
+                android:text="10987654321"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="评估时间"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="2019年11月24日"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="评估地点"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="浙江杭州第X医院"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="各维度分级"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="日常生活活动能力 级；\n认知能力 级；\n精神状态与社会交流能力 级"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="能力总体评价"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:layout_weight="8"
+                android:text="0能力完好
+\n日常生活能力为0级，认知能力为0级或1级，精神状态与社会交流能力为0级或1级。
+\n1轻度失能
+\n日常生活活动能力为0级，认知能力、精神状态与社会交流能力至少有一项为2级；日常生活活动能力为1级，认知能力、精神状态与社会交流能力为0或1级，或认知能力或精神状态与社会交流能力有1项为2级。
+\n2中度失能
+\n日常生活活动能力为1级，认知能力、精神状态与社会交流能力均为2级，或者有一项为3级；日常生活活动能力为2级，认知能力、精神状态与社会交流能力为0或1级，或认知能力、精神状态与社会交流能力有1项为2级。
+\n3重度失能
+\n日常生活能力为3级；日常生活活动能力为2级，认知能力、精神状态与社会交流能力均为2级或者有一项为3级。
+"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="等级变更条款"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="7"
+                android:layout_span="8"
+                android:text="1有认知障碍/痴呆、精神疾病者，在原有能力级别上提高一个等级；
+\n2近30天内发生过2次及以上跌倒、噎食、自杀、走失者，在原有能力级别上提高一个等级；
+\n3处于昏迷状态者，直接评定为重度失能；
+\n4若初步等级确定为“3重度失能”，则不考虑上述1-3中各情况对最终等级的影响，等级不再提高。
+"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="等级结论"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="1轻度失能"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="疾病诊断"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="老年痴呆"
+                android:textSize="17sp"/>
+        </TableRow>
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="健康管理"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="1111111111111111111111"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="护理管理"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="1111111111111111111111"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow android:background="#E6E6E6">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="健康管理"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="1111111111111111111111"
+                android:textSize="17sp"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="评估人员"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_weight="8"
+                android:text="1333333"
+                android:textSize="17sp"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

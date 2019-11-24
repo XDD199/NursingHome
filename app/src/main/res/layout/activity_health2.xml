@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Health2Activity">
+
+    <include layout="@layout/title"></include>
+
+    <ImageView
+        android:id="@+id/imageview_health21"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="322dp"
+        android:src="@drawable/head"></ImageView>
+
+    <TextView
+        android:id="@+id/textview_health21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageview_health21"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="76dp"
+        android:text="姓名：刘老人"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textview_health22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_health21"
+        android:layout_alignStart="@+id/imageview_health21"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="15dp"
+        android:text="床号：49"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/button_health21"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageview_health21"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/exchange">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/time_health"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_health21"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/button_health21"
+        android:background="#FAE6E6"
+        android:text="2019-1-1"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:onClick="monClick"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_health"
+        android:layout_marginTop="29dp">
+
+        <TableLayout
+            android:id="@+id/table_health"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="血压"
+                    android:textSize="17sp" />
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="血糖"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="血氧"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="摄食量"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="饮水量"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="排尿量"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="排便"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="睡眠"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="给药"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_weight="3"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="备注"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_weight="7"
+                    android:background="@drawable/border"
+                    android:padding="10dp"
+                    android:text="********"
+                    android:textSize="17sp" />
+            </TableRow>
+
+            <TableRow>
+
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
