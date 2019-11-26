@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthActivity">
+
+    <include layout="@layout/title"></include>
+
+    <ImageView
+        android:id="@+id/imageview_health1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="322dp"
+        android:src="@drawable/head"></ImageView>
+
+    <TextView
+        android:id="@+id/textview_health1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageview_health1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="76dp"
+        android:text="姓名：刘老人"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textview_health2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_health1"
+        android:layout_alignStart="@+id/imageview_health1"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="15dp"
+        android:text="床号：49"
+        android:textSize="17sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/button_health1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageview_health1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/exchange">
+
+    </Button>
+
+    <Spinner
+        android:id="@+id/spinner_health1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageview_health1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/button_health1"
+        android:entries="@array/item_health" />
+
+    <Spinner
+        android:id="@+id/spinner_health2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageview_health1"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/button_health1"
+        android:entries="@array/time_health" />
+
+    <Spinner
+        android:id="@+id/spinner_health3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageview_health1"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/button_health1"
+        android:entries="@array/shape_health" />
+
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart_health"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/spinner_health2"
+        android:layout_marginTop="12dp"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageview_health2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/chart_health"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/analyze" />
+
+    <TextView
+        android:id="@+id/textview_health3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chart_health"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imageview_health2"
+        android:text="健康报告"
+        android:textColor="@color/colortomato"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_health4"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textview_health3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border"
+        android:text="状况稳定，需持续关注血压。"
+        android:textSize="16sp" />
+
+</RelativeLayout>

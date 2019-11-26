@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_health">
+        <item>血压</item>
+        <item>血糖</item>
+        <item>血氧</item>
+        <item>摄食量</item>
+        <item>饮水量</item>
+        <item>排尿量</item>
+        <item>睡眠</item>
+        <item>给药</item>
+    </string-array>
+</resources>

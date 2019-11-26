@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_health">
+        <item>近一个礼拜</item>
+        <item>近一个月</item>
+        <item>近三个月</item>
+        <item>近半年</item>
+        <item>所有</item>
+    </string-array>
+</resources>

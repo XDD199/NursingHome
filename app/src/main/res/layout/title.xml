@@ -25,6 +25,7 @@
         android:textSize="24sp" />
 
     <Button
+        android:onClick="menu_right"
         android:id="@+id/title_menu"
         android:layout_width="32dp"
         android:layout_height="35dp"
