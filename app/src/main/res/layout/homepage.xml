@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".HomePage">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -44,6 +44,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/ImageView_home"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/no_use"/>
@@ -54,21 +55,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/block1"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:background="@drawable/block1" />
+        <Button
+            android:id="@+id/block1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/block1" />
 
-            <Button
-                android:id="@+id/block2"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:background="@drawable/block2"/>
+        <Button
+            android:id="@+id/block2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:background="@drawable/block2"/>
 
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"

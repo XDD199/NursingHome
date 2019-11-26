@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataRecording">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/data_background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"/>
+        <Button
+            android:id="@+id/data_back"
+            android:layout_width="39dp"
+            android:layout_height="22dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/tomatoback" />
+
+        <ImageView
+            android:id="@+id/data_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/cutehead"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fed1ce"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/data_background">
+
+            <TextView
+                android:id="@+id/data_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="巴啦啦"
+                android:textColor="#ff554a"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/data_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <Button
+                android:id="@+id/data_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="血  压"
+                android:textSize="14sp"
+                android:textColor="#ff554a"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fed1ce"/>
+
+
+            <Button
+                android:id="@+id/data_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="血  糖"
+                android:textSize="14sp"
+                android:textColor="#ff554a"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fed1ce"/>
+
+
+            <Button
+                android:id="@+id/data_button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="血  氧"
+                android:textSize="14sp"
+                android:textColor="#ff554a"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fed1ce"/>
+
+
+            <Button
+                android:id="@+id/data_button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="给  药"
+                android:textSize="14sp"
+                android:textColor="#ff554a"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fed1ce"/>
+
+
+            <Button
+                android:id="@+id/data_button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="排  泄"
+                android:textSize="14sp"
+                android:textColor="#ff554a"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fed1ce"/>
+
+            <Button
+                android:id="@+id/data_button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="水  分"
+                android:textSize="14sp"
+                android:textColor="#ff554a"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fed1ce"/>
+
+
+            <Button
+                android:id="@+id/data_button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:text="饮  食"
+                android:textSize="14sp"
+                android:textColor="#ff554a"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fed1ce"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#fed1ce"/>
+
+            <Button
+                android:id="@+id/data_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#ffffff"
+                android:text="历 史 记 录"
+                android:textColor="#ff554a"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#fed1ce">
+            </EditText>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:layout_centerHorizontal="true"
+                android:text="确      定"
+                android:textSize="14sp"
+                android:textColor="#ff554a"
+                android:background="#fed1ce"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
