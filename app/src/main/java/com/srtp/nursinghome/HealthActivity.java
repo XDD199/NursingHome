@@ -72,6 +72,15 @@ public class HealthActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button back=(Button)findViewById(R.id.title_back);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HealthActivity.this,   MessageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //标题栏的菜单
@@ -130,13 +139,16 @@ public class HealthActivity extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 switch (R.menu.menu_title) {
                     case R.id.basic_menu:
-                        Toast.makeText(HealthActivity.this, "setting", Toast.LENGTH_SHORT);
+                        Intent intent1=new Intent(HealthActivity.this,BasicActivity.class);
+                        startActivity(intent1);
                         break;
                     case R.id.health_menu:
-                        Toast.makeText(HealthActivity.this, "扫一扫", Toast.LENGTH_SHORT).show();
+                        Intent intent2=new Intent(HealthActivity.this,HealthActivity.class);
+                        startActivity(intent2);
                         break;
                     case R.id.care_munu:
-                        Toast.makeText(HealthActivity.this, "字体颜色", Toast.LENGTH_SHORT).show();
+                        //Intent intent3=new Intent(BasicActivity.this,BasicActivity.class);
+                        //startActivity(intent3);
                         break;
                     default:
                         break;

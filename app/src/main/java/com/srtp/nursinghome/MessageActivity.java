@@ -38,6 +38,15 @@ public class MessageActivity extends AppCompatActivity {
             }
         }));
 
+        Button back=(Button)findViewById(R.id.title_back);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MessageActivity.this,HomePage.class);
+                startActivity(intent);
+            }
+        });
+
         //RecyclerView
         initOld();
         recyclerView=(RecyclerView)findViewById(R.id.rcv_message);

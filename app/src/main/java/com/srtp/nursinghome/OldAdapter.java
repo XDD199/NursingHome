@@ -3,6 +3,7 @@ package com.srtp.nursinghome;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,13 +16,13 @@ public class OldAdapter extends RecyclerView.Adapter<OldAdapter.ViewHolder> {
     private List<Old> mOldList;
 
     static class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView oldImage;
+        Button oldImage;
         TextView oldName;
         TextView oldId;
 
         public ViewHolder(View view){
             super(view);
-            oldImage=(ImageView)view.findViewById(R.id.old_image);
+            oldImage=(Button)view.findViewById(R.id.old_image);
             oldName=(TextView)view.findViewById(R.id.old_name);
             oldId=(TextView)view.findViewById(R.id.old_id);
         }
@@ -42,7 +43,7 @@ public class OldAdapter extends RecyclerView.Adapter<OldAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Old old=mOldList.get(position);
-        holder.oldImage.setImageResource(old.getImageId());
+        holder.oldImage.setBackgroundResource(old.getImageId());
         holder.oldName.setText(old.getName());
         holder.oldId.setText(old.getId());
     }

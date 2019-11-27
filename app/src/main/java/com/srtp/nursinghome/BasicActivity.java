@@ -34,6 +34,14 @@ public class BasicActivity extends AppCompatActivity {
         TextView title_text=(TextView)findViewById(R.id.title_text);
         title_text.setText("基本信息");
 
+        Button back=(Button)findViewById(R.id.title_back);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(BasicActivity.this,   MessageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //标题栏的菜单
@@ -45,40 +53,9 @@ public class BasicActivity extends AppCompatActivity {
         //super.onCreateOptionsMenu(menu);
         return true;
     }
-/*
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        switch (R.menu.menu_title) {
-            case R.id.basic_menu:
 
-                Toast.makeText(this, "setting", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.health_menu:
-                Toast.makeText(this, "扫一扫", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.care_munu:
-                Toast.makeText(this, "字体颜色", Toast.LENGTH_SHORT).show();
-                break;
-            default:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
- */
-/*
-    @Override
-    public void onCreateContextMenu(ContextMenu menu, View v,
-                                    ContextMenu.ContextMenuInfo menuInfo) {
-        // TODO Auto-generated method stub
-        getMenuInflater().inflate(R.menu.menu_title, menu);
-        super.onCreateContextMenu(menu, v, menuInfo);
-    }
 
-*/
     public void menu_right(View view) {
         // TODO Auto-generated method stub
 
@@ -91,13 +68,16 @@ public class BasicActivity extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 switch (R.menu.menu_title) {
                     case R.id.basic_menu:
-                        Toast.makeText(BasicActivity.this, "setting", Toast.LENGTH_SHORT);
+                        Intent intent1=new Intent(BasicActivity.this,BasicActivity.class);
+                        startActivity(intent1);
                         break;
                     case R.id.health_menu:
-                        Toast.makeText(BasicActivity.this, "扫一扫", Toast.LENGTH_SHORT).show();
+                        Intent intent2=new Intent(BasicActivity.this,HealthActivity.class);
+                        startActivity(intent2);
                         break;
                     case R.id.care_munu:
-                        Toast.makeText(BasicActivity.this, "字体颜色", Toast.LENGTH_SHORT).show();
+                        //Intent intent3=new Intent(BasicActivity.this,BasicActivity.class);
+                        //startActivity(intent3);
                         break;
                     default:
                         break;
