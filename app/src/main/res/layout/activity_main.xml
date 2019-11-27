@@ -1,48 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="登录"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="146dp" />
+        <ImageView
+            android:id="@+id/imageview_enter1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="513dp"
+            android:src="@drawable/enter1" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="信息"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="314dp" />
+        <TextView
+            android:id="@+id/textview_enter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="165dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginBottom="535dp"
+            android:text="养老院助手"
+            android:textColor="#000000"
+            android:textSize="34sp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="homepage" />
+        <EditText
+            android:id="@+id/edittext_enter1"
+            android:layout_width="326dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="450dp"
+            android:background="#F2F2F2"
+            android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="basic" />
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="health1" />
+        <EditText
+            android:id="@+id/edittext_enter2"
+            android:layout_width="326dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="389dp"
+            android:background="#F2F2F2"
+            android:hint="                  请输入密码"
+            android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="health2" />
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/imagebutton_enter1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="149dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/enter2" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox_enter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="344dp"
+            android:checked="false"
+            android:text="记住密码"
+            android:textColor="#5E5E5E" />
+
+        <Button
+            android:id="@+id/button_enter1"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_enter3"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toStartOf="@+id/button_enter2"
+            android:background="#FAFAFA"
+            android:minHeight="30dip"
+            android:text="忘记密码" />
+
+        <Button
+            android:id="@+id/button_enter2"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_enter3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="1dp"
+            android:background="#FAFAFA"
+            android:minHeight="30dip"
+            android:text="用户注册" />
+
+        <Button
+            android:id="@+id/button_enter3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:background="#FAFAFA"
+            android:minHeight="30dip"
+            android:text="登陆即代表阅读并同意服务协议" />
+
+    </RelativeLayout>

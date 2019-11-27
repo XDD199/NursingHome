@@ -68,8 +68,8 @@ public class HealthActivity extends AppCompatActivity {
         exchange.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
-
+                Intent intent=new Intent(HealthActivity.this,Health2Activity.class);
+                startActivity(intent);
             }
         });
     }

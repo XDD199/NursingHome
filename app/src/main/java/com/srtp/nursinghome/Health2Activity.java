@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,6 +44,15 @@ public class Health2Activity extends AppCompatActivity implements DatePicker.OnD
         initView();
         choose.setText(year+"-"+month+"-"+day);
 
+        //exchange
+        Button exchange=(Button)findViewById(R.id.button_health21);
+        exchange.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Health2Activity.this,HealthActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
