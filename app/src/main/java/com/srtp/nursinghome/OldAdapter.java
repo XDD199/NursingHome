@@ -1,5 +1,8 @@
 package com.srtp.nursinghome;
 
+import android.content.Context;
+import android.content.Intent;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,17 +15,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import static androidx.core.content.ContextCompat.startActivities;
+import static androidx.core.content.ContextCompat.startActivity;
+
 public class OldAdapter extends RecyclerView.Adapter<OldAdapter.ViewHolder> {
     private List<Old> mOldList;
 
     static class ViewHolder extends RecyclerView.ViewHolder{
-        Button oldImage;
+        ImageView oldImage;
         TextView oldName;
         TextView oldId;
+        View oldView;
 
         public ViewHolder(View view){
             super(view);
-            oldImage=(Button)view.findViewById(R.id.old_image);
+            oldView=view;
+            oldImage=(ImageView)view.findViewById(R.id.old_image);
             oldName=(TextView)view.findViewById(R.id.old_name);
             oldId=(TextView)view.findViewById(R.id.old_id);
         }
@@ -36,7 +44,19 @@ public class OldAdapter extends RecyclerView.Adapter<OldAdapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.old_item,parent,false);
-        ViewHolder holder=new ViewHolder(view);
+       // ViewHolder holder=new ViewHolder(view);
+        final ViewHolder holder=new ViewHolder(view);
+        holder.oldImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position=holder.getAdapterPosition();
+                Old old=mOldList.get(position);
+                 Context mContext=view.getContext();
+                Intent intent=new Intent(mContext,BasicActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
+
         return holder;
     }
 
@@ -52,4 +72,6 @@ public class OldAdapter extends RecyclerView.Adapter<OldAdapter.ViewHolder> {
     public int getItemCount() {
         return mOldList.size();
     }
+
+
 }

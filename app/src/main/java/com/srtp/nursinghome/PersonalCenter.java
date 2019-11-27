@@ -2,8 +2,12 @@ package com.srtp.nursinghome;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.List;
@@ -21,6 +25,15 @@ public class PersonalCenter extends AppCompatActivity {
                 PersonalCenter.this,android.R.layout.simple_list_item_1,data);
         ListView listView = (ListView) findViewById(R.id.personal_list);
         listView.setAdapter(adapter);
+
+        ImageButton toId=(ImageButton)findViewById(R.id.head);
+        toId.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(PersonalCenter.this,IDSetting.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

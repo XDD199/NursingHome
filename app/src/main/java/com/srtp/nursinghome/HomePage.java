@@ -24,7 +24,7 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-        Button toCalendar=(Button)findViewById(R.id.block2);
+        Button toCalendar=(Button)findViewById(R.id.title_calendar);
         toCalendar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -55,7 +55,7 @@ public class HomePage extends AppCompatActivity {
         toRecord.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(HomePage.this,DataRecording.class);
+                Intent intent=new Intent(HomePage.this,BioMeasuren.class);
                 startActivity(intent);
             }
         });

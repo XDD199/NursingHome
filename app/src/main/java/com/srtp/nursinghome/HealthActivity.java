@@ -137,7 +137,7 @@ public class HealthActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 // TODO Auto-generated method stub
-                switch (R.menu.menu_title) {
+                switch (item.getItemId()) {
                     case R.id.basic_menu:
                         Intent intent1=new Intent(HealthActivity.this,BasicActivity.class);
                         startActivity(intent1);

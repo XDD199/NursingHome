@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomePage"></activity>
-        <activity android:name=".SearchActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +18,19 @@
         </activity>
         <activity android:name=".MessageActivity" />
         <activity android:name=".EnterActivity" />
+        <activity android:name=".BasicActivity"/>
+        <activity android:name=".IDSetting"/>
+        <activity android:name=".PersonalCenter"/>
+        <activity android:name=".BioMeasuren"/>
+        <activity android:name=".HomePage"/>
+        <activity android:name=".HealthActivity"/>
+        <activity android:name=".Health2Activity"/>
+        <activity android:name=".DataRecording"/>
+        <activity android:name=".CalendarActivity"/>
+        <activity android:name=".SearchActivity"/>
+
+
+
     </application>
 
 </manifest>

@@ -2,6 +2,7 @@ package com.srtp.nursinghome;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -66,7 +67,8 @@ public class BasicActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 // TODO Auto-generated method stub
-                switch (R.menu.menu_title) {
+                //Context mContext=view.getContext();
+                switch (item.getItemId()) {
                     case R.id.basic_menu:
                         Intent intent1=new Intent(BasicActivity.this,BasicActivity.class);
                         startActivity(intent1);
