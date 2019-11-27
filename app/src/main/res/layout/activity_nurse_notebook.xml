@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FF6666" />
+
+
+        <ImageButton
+            android:id="@+id/Button_notebook_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/to_return"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/search_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:layout_weight="1"
+            android:background="#FF6666"
+            android:text="工作日志"
+            android:textColor="#FFFFFF"
+            android:textSize="11pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/spin_nurse_record_calendar_year"
+                android:entries="@array/year"
+                android:spinnerMode="dialog">
+            </Spinner>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/spin_nurse_record_calendar_dayornight"
+                android:entries="@array/month"
+                android:spinnerMode="dialog">
+            </Spinner>
+
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/spin_nurse_record_calendar_floor"
+                android:entries="@array/dayornight"
+                android:spinnerMode="dialog">
+            </Spinner>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/spin_nurse_record_calendar_month"
+                android:entries="@array/floor"
+                android:spinnerMode="dialog">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10pt"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="2019年8月1日 一楼 日班"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40pt"
+                android:background="@drawable/arrow_right"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10pt"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="2019年8月1日 一楼 夜班"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+
+            <ImageButton
+                android:id="@+id/Button_notebook_toread"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40pt"
+                android:background="@drawable/arrow_right"
+                android:onClick="onClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10pt"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="2019年8月2日 一楼 日班"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40pt"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10pt"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="2019年8月2日 一楼 夜班"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40pt"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10pt"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="2019年8月3日 一楼 日班"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40pt"
+                android:background="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/Button_notebook_add"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/add"
+            android:onClick="onClick" />
+    </LinearLayout>
+</ScrollView>

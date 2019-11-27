@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FF6666" />
+
+
+        <ImageButton
+            android:id="@+id/Button_form_return"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-70dp"
+            android:background="@drawable/to_return"
+            android:onClick="onClick" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:layout_weight="1"
+            android:background="#FF6666"
+            android:text="护理记录"
+            android:textColor="#FFFFFF"
+            android:textSize="11pt"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/spin_nurse_record_calendar_year"
+                android:entries="@array/year"
+                android:spinnerMode="dialog">
+            </Spinner>
+
+            <Spinner
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+
+                android:id="@+id/spin_nurse_record_calendar_month"
+                android:entries="@array/month"
+                android:spinnerMode="dialog">
+            </Spinner>
+
+
+            <ImageButton
+                android:id="@+id/Button_form_change"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/change"
+                android:onClick="onClick" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/search_red"/>
+
+        </LinearLayout>
+
+       <TableLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="30dp"
+           android:background="#667788"
+           android:stretchColumns="1">
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#778899"
+               >
+
+               <TextView
+                   android:layout_width="0dp"
+
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:layout_height="40dp"
+                   android:textSize="8pt"
+                   android:background="#FFFFFF"
+                   android:textColor="#000000"
+                   android:text="2019年8月8日" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:layout_marginLeft="2dp"
+                   android:gravity="center"
+                   android:background="#FFFFFF"
+                   android:layout_height="40dp"
+                   android:textSize="9pt"
+                   android:textColor="#000000"
+                   android:text="倒垃圾" />
+
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:background="#778899"
+               android:layout_marginTop="2dp"
+               >
+
+               <TextView
+                   android:layout_width="0dp"
+
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:layout_height="40dp"
+                   android:textSize="8pt"
+                   android:background="#FFFFFF"
+                   android:textColor="#000000"
+                   android:text="2019年8月16日" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="2"
+                   android:layout_marginLeft="2dp"
+                   android:gravity="center"
+                   android:background="#FFFFFF"
+                   android:layout_height="40dp"
+                   android:textSize="9pt"
+                   android:textColor="#000000"
+                   android:text="换洗床单" />
+
+           </TableRow>
+       </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
