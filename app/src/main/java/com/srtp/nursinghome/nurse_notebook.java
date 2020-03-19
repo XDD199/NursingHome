@@ -1,4 +1,4 @@
-package com.example.to_work;
+package com.srtp.nursinghome;
 
 import androidx.appcompat.app.AppCompatActivity;
 

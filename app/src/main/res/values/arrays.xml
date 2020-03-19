@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    -<string-array name="year">
+
+    <item>2019</item>
+
+    <item>2018</item>
+
+    <item>2017</item>
+
+    <item>2016</item>
+
+    <item>2015</item>
+
+    <item>2014</item>
+
+    <item>2013</item>
+
+</string-array>
+
+
+    -<string-array name="month">
+
+    <item>1月</item>
+
+    <item>2月</item>
+
+    <item>3月</item>
+
+    <item>4月</item>
+
+    <item>5月</item>
+
+    <item>6月</item>
+
+    <item>7月</item>
+
+    <item>8月</item>
+
+    <item>9月</item>
+
+    <item>10月</item>
+
+    <item>11月</item>
+
+    <item>12月</item>
+
+</string-array>
+
+
+    -<string-array name="dayornight">
+
+    <item>所有</item>
+
+    <item>日班</item>
+
+    <item>夜班</item>
+
+</string-array>
+
+
+    -<string-array name="floor">
+
+    <item>一楼</item>
+
+    <item>二楼</item>
+
+    <item>三楼</item>
+
+    <item>四楼</item>
+
+    <item>五楼</item>
+
+</string-array>
+</resources>

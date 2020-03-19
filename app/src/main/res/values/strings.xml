@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NursingHome</string>
+
+    <string name="title_activity_nurse_record_form">nurse_record_form</string>
+
+    <string name="title_activity_work_log">work_log</string>
+
+    <string name="write_1" translatable="false">\@8床</string>
 </resources>

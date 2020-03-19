@@ -1,10 +1,13 @@
-package com.example.to_work;
+package com.srtp.nursinghome;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.srtp.nursinghome.MainActivity;
+import com.srtp.nursinghome.R;
 
 public class avater extends AppCompatActivity {
 
@@ -19,7 +22,7 @@ public class avater extends AppCompatActivity {
         Intent intent;
         switch(v.getId()){
             case R.id.Button_avatar_return:
-                intent=new Intent(this,MainActivity.class);
+                intent=new Intent(this, MainActivity.class);
                 startActivity(intent);
                 break;
         default:
