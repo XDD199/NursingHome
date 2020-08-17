@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalCenter">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff554a">
+
+        <ImageButton
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Button_privacypolicy_return"
+            android:background="@drawable/to_return"/>
+        <TextView
+            android:id="@+id/privacypolicy_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="医护宝隐私政策"
+            android:textColor="#ffffff"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/privacypolicy_content"
+        android:text="balabala"
+        android:textColor="#000000"/>
+</LinearLayout>

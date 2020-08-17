@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalCenter">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff554a">
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Button_personal_aboutus_return"
+            android:background="@drawable/to_return"/>
+        <TextView
+            android:id="@+id/personal_title"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="-50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="#ffffff"
+            android:textSize="24sp"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/head_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff"/>
+        <ImageButton
+            android:id="@+id/head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/no_use"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_back"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/version_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="#999999"/>
+
+            <TextView
+                android:id="@+id/version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/version_line"
+                android:text="版本"
+                android:textSize="17sp"
+                android:textColor="#999999"/>
+
+            <TextView
+                android:id="@+id/version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="1.2.1"
+                android:layout_toRightOf="@id/version_line"
+                android:textSize="17sp"
+                android:textColor="#999999"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_back"
+            android:orientation="horizontal"
+            android:layout_marginBottom="0dp"
+            >
+
+            <ImageView
+                android:id="@+id/deal_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true"
+                android:background="#999999"/>
+
+            <Button
+                android:id="@+id/Button_ServiceAgreement"
+                android:layout_width="wrap_content"
+                android:layout_height="15sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@id/deal_line"
+                android:background="#ffffff"
+                android:text="服务协议"
+                android:textColor="#0066ff"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/Button_PrivacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="15sp"
+                android:layout_marginLeft="15dp"
+                android:text="隐私政策"
+                android:layout_toRightOf="@id/deal_line"
+                android:textSize="10sp"
+                android:background="#ffffff"
+                android:textColor="#0066ff"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/personal_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
