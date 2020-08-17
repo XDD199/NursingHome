@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalCenter">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff554a">
+
+        <ImageButton
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Button_personal_usinghelp_return"
+            android:background="@drawable/to_return"/>
+        <TextView
+            android:id="@+id/usinghelp_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="医护宝使用帮助"
+            android:textColor="#ffffff"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:id="@+id/usinghelp_01"
+        android:text="1.快速查找"
+        android:textColor="#000000"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+         <ImageButton
+             android:id="@+id/button_usinghelp_01"
+             android:layout_width="50sp"
+             android:layout_height="50sp"
+             android:layout_marginTop="10sp"
+             android:background="@drawable/search_red"
+            />
+         <EditText
+             android:layout_marginLeft="20dp"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:id="@+id/text_usinghelp_01"
+             android:textSize="12sp"
+             android:textColor="#000000"
+             android:text="找到左图所示的图标，在输入想要查找的信息（如老人姓名、日期、事项等，点击左图按钮即可）"/>
+
+        </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:id="@+id/usinghelp_02"
+        android:text="2.工作日志@特定老人"
+        android:textColor="#000000"/>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/button_usinghelp_02"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/tag"
+            />
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/text_usinghelp_02"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="在工作日志书写界面找到左图所示图标，点击就可以选择要特别备注的老人"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>
