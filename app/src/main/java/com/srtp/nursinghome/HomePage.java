@@ -33,12 +33,13 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+
         Button toLog=(Button)findViewById(R.id.block3);
         toLog.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                //Intent intent=new Intent(HomePage.this,MessageActivity.class);
-                //startActivity(intent);
+                Intent intent=new Intent(HomePage.this,nurse_notebook.class);
+                startActivity(intent);
             }
         });
 

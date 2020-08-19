@@ -16,7 +16,7 @@ public class nurse_record_calendar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nurse_record_calendar);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
         //获取界面布局文件中的Spinner组件
         nurse_record_calendar_year=(Spinner) findViewById(R.id.spin_nurse_record_calendar_year);
         nurse_record_calendar_month=(Spinner)findViewById(R.id.spin_nurse_record_calendar_month);

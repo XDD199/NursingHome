@@ -35,5 +35,23 @@ public class PersonalCenter extends AppCompatActivity {
             }
         });
 
+        Button toHome=(Button)findViewById(R.id.bottom_firstpage);
+        toHome.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(PersonalCenter.this,HomePage.class);
+                startActivity(intent);
+            }
+        });
+
+        Button toRecord=(Button)findViewById(R.id.bottom_workdata);
+        toRecord.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(PersonalCenter.this,BioMeasuren.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

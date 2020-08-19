@@ -26,6 +26,24 @@ public class BioMeasuren extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bio_measuren);
 
+        Button toHome=(Button)findViewById(R.id.bottom_firstpage);
+        toHome.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(BioMeasuren.this,HomePage.class);
+                startActivity(intent);
+            }
+        });
+
+        Button toPersonal=(Button)findViewById(R.id.bottom_personalcenter);
+        toPersonal.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(BioMeasuren.this,PersonalCenter.class);
+                startActivity(intent);
+            }
+        });
+
         //RecyclerView
         initOld();
         recyclerView=(RecyclerView)findViewById(R.id.rcv_message);

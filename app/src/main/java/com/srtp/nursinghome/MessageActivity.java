@@ -58,23 +58,23 @@ public class MessageActivity extends AppCompatActivity {
     }
     //RecyclerView
     private void initOld(){
-        Old wang=new Old("王老人","1号",R.drawable.head);
+        Old wang=new Old("王老人","1号",R.drawable.cutehead);
         oldList.add(wang);
-        Old liu=new Old("刘老人","2号",R.drawable.head);
+        Old liu=new Old("刘老人","2号",R.drawable.cutehead);
         oldList.add(liu);
-        Old wu=new Old("吴老人","3号",R.drawable.head);
+        Old wu=new Old("吴老人","3号",R.drawable.cutehead);
         oldList.add(wu);
-        Old lin=new Old("林老人","4号",R.drawable.head);
+        Old lin=new Old("林老人","4号",R.drawable.cutehead);
         oldList.add(lin);
-        Old li=new Old("李老人","5号",R.drawable.head);
+        Old li=new Old("李老人","5号",R.drawable.cutehead);
         oldList.add(li);
-        Old sun=new Old("孙老人","6号",R.drawable.head);
+        Old sun=new Old("孙老人","6号",R.drawable.cutehead);
         oldList.add(sun);
-        Old lin2=new Old("林老人","7号",R.drawable.head);
+        Old lin2=new Old("林老人","7号",R.drawable.cutehead);
         oldList.add(lin2);
-        Old li2=new Old("李老人","8号",R.drawable.head);
+        Old li2=new Old("李老人","8号",R.drawable.cutehead);
         oldList.add(li2);
-        Old sun2=new Old("孙老人","9号",R.drawable.head);
+        Old sun2=new Old("孙老人","9号",R.drawable.cutehead);
         oldList.add(sun2);
     }
 }

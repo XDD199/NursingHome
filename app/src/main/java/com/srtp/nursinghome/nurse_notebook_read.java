@@ -12,7 +12,7 @@ public class nurse_notebook_read extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nurse_notebook_read);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
     }
     public void onClick(View v) {
         Intent intent;

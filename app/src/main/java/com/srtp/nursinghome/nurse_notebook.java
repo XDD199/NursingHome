@@ -12,13 +12,13 @@ public class nurse_notebook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nurse_notebook);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
     }
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()) {
             case R.id.Button_notebook_return:
-                intent = new Intent(this, MainActivity.class);
+                intent = new Intent(this, HomePage.class);
                 startActivity(intent);
                 break;
 
