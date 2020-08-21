@@ -6,28 +6,95 @@
     android:layout_gravity="bottom"
     android:background="#fcf7f7">
 
-    <Button
-        android:id="@+id/bottom_firstpage"
-        android:layout_width="35dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:background="@drawable/first_page" />
+    //first_page
+    <RelativeLayout
+        android:id="@+id/bottom_firstpage_all"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bottom_workdata"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_margin="90dp"
-        android:background="@drawable/work_data" />
+        <TextView
+            android:id="@+id/bottom_firstpage_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#656565"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/bottom_firstpage"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/bottom_firstpage_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/first_page"/>
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/bottom_personalcenter"
-        android:layout_width="55dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_margin="30dp"
-        android:background="@drawable/personal_center" />
+    //measure_page
+    <RelativeLayout
+        android:id="@+id/bottom_workdata_all"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/bottom_workdata_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="工作数据"
+            android:textColor="#656565"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/bottom_workdata"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/bottom_workdata_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/work_data"/>
+    </RelativeLayout>
+
+    //Personal Center
+    <RelativeLayout
+        android:id="@+id/bottom_personalcenter_all"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/bottom_personalcenter_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textColor="#656565"
+            android:textSize="14sp"/>
+        <Button
+            android:id="@+id/bottom_personalcenter"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/bottom_personalcenter_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/personal_center"/>
+    </RelativeLayout>
+
+
+
+
+
+
 
 </LinearLayout>

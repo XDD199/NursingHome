@@ -50,7 +50,7 @@ public class BioMeasuren extends AppCompatActivity {
         StaggeredGridLayoutManager layoutManager=new
                 StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-        OldAdapter adapter=new OldAdapter(oldList);
+        MeasureAdapter adapter=new MeasureAdapter(oldList);
         recyclerView.setAdapter(adapter);
     }
     //RecyclerView

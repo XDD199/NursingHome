@@ -35,6 +35,7 @@
         <activity android:name=".nurse_record_form"/>
         <activity android:name=".PersonalCenter"/>
         <activity android:name=".SearchActivity"/>
+        <activity android:name=".WorkTodoActivity"/>
 
 
 

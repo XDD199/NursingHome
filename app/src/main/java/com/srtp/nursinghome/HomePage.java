@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
 public class HomePage extends AppCompatActivity {
 
@@ -20,6 +22,15 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(HomePage.this,MessageActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button toWorkTodo=(Button)findViewById(R.id.block2);
+        toWorkTodo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomePage.this,WorkTodoActivity.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +54,7 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-        Button toHome=(Button)findViewById(R.id.bottom_firstpage);
+        Button toHome=(Button) findViewById(R.id.bottom_firstpage);
         toHome.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -52,7 +63,7 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
-        Button toRecord=(Button)findViewById(R.id.bottom_workdata);
+        Button toRecord=(Button) findViewById(R.id.bottom_workdata);
         toRecord.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
