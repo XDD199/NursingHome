@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ff554a">
+
+        <Button
+            android:id="@+id/worktodo_title_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/worktodo_title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="工作日程"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/woketodo_title_menu"
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_workdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+</LinearLayout>
