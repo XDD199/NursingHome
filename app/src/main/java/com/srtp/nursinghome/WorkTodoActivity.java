@@ -37,82 +37,82 @@ public class WorkTodoActivity extends AppCompatActivity {
         //准备数据源
         List<Map<String, Object>> lv_workdata = new ArrayList<Map<String, Object>>();
         Map map = new HashMap<String, Object>();
-        map.put("work_event", "协助老人起床、洗漱");
+        map.put("work_event", " 协助老人起床、洗漱 ");
         map.put("event_time", "6：30");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "餐前给药、血压测量");
+        map.put("work_event", " 餐前给药、血压测量 ");
         map.put("event_time", "7：15");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "早餐，观察并记录饮食情况");
+        map.put("work_event", " 早餐，观察并记录饮食情况 ");
         map.put("event_time", "7：30");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "餐后给药、血压测量");
+        map.put("work_event", " 餐后给药、血压测量 ");
         map.put("event_time", "7：45");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "床头交接");
+        map.put("work_event", " 床头交接 ");
         map.put("event_time", "8：00");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "中餐，观察并记录饮食情况");
+        map.put("work_event", " 中餐，观察并记录饮食情况 ");
         map.put("event_time", "11：00");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "午休，巡视");
+        map.put("work_event", " 午休，巡视 ");
         map.put("event_time", "12：00——14：30");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "个人卫生清洁");
+        map.put("work_event", " 个人卫生清洁 ");
         map.put("event_time", "14：45");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "晚餐，观察并记录饮食情况");
+        map.put("work_event", " 晚餐，观察并记录饮食情况 ");
         map.put("event_time", "16：30");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "晚餐后的给药、血压测量等");
+        map.put("work_event", " 晚餐后的给药、血压测量等 ");
         map.put("event_time", "18：00——20：00");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "协助老人夜间休息");
+        map.put("work_event", " 协助老人夜间休息 ");
         map.put("event_time", "21：00");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "夜间护理、巡视");
+        map.put("work_event", " 夜间护理、巡视 ");
         map.put("event_time", "21：00——6：30");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "饮食水分");
+        map.put("work_event", " 饮食水分 ");
         map.put("event_time", "全天");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "老人排泄");
+        map.put("work_event", " 老人排泄 ");
         map.put("event_time", "全天");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "来访/物品登记");
+        map.put("work_event", " 来访/物品登记 ");
         map.put("event_time", "全天");
         lv_workdata.add(map);
 
         map = new HashMap<String, Object>();
-        map.put("work_event", "环境物品消毒");
+        map.put("work_event", " 环境物品消毒 ");
         map.put("event_time", "全天");
         lv_workdata.add(map);
 
