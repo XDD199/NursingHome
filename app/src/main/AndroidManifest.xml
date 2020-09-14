@@ -2,14 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.srtp.nursinghome">
 
+    <uses-permission android:name="android.permission.INTERENT"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo_enurse"
+        android:icon="@drawable/transparent_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".EnterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +23,7 @@
         <activity android:name=".BioMeasuren"/>
         <activity android:name=".CalendarActivity"/>
         <activity android:name=".DataRecording"/>
-        <activity android:name=".EnterActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Health2Activity"/>
         <activity android:name=".HealthActivity"/>
         <activity android:name=".HomePage"/>
