@@ -12,7 +12,14 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.concurrent.CompletableFuture;
+
+import dbForLry.JDBCUtils;
 import dbForLry.Login_user;
 
 public class EnterActivity extends AppCompatActivity {
@@ -41,21 +48,57 @@ public class EnterActivity extends AppCompatActivity {
                 }else{
                     String account = mEtLoginUsername.getText().toString().trim();
                     String password = mEtLoginPassword.getText().toString().trim();
-                    //账号5300
-                    if (    (account.equals("5300")&& password.equals("123456")) ||
-                            (account.equals("1316")&& password.equals("123456")) ||
-                            (account.equals("4976")&& password.equals("123456")) ||
-                            (account.equals("4")&& password.equals("123456"))
-                    )
-                    {
-                        Intent intent=new Intent(EnterActivity.this,HomePage.class);
-                        startActivity(intent);
-                        Toast.makeText(EnterActivity.this,"登陆成功",Toast.LENGTH_SHORT).show();
-                    }
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            boolean loginSuccess = false;
 
-                    else{
-                        Toast.makeText(EnterActivity.this,"用户名或密码不正确，请重新输入",Toast.LENGTH_SHORT).show();
-                    }
+                            try {
+                                Connection connection = JDBCUtils.getConnection();
+                                System.out.println(connection);
+                                PreparedStatement pstmt = connection.prepareStatement("select * from workers where w_id=? and w_password=?");
+                                pstmt.setString(1,account);
+                                pstmt.setString(2,password);
+
+                                ResultSet rs = pstmt.executeQuery();
+                                boolean isUserFound = rs.next();
+                                if (isUserFound) {
+                                    String username = rs.getString("w_id");
+                                    String pwd = rs.getString("w_password");
+                                    if (account.equals(username) && password.equals(pwd)) {
+                                        loginSuccess = true;
+                                    }
+                                }
+
+
+                                //账号5300
+                                if (loginSuccess)
+                                {
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Intent intent=new Intent(EnterActivity.this,HomePage.class);
+                                            startActivity(intent);
+                                            Toast.makeText(EnterActivity.this,"登陆成功",Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+                                }
+                                else{
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            Toast.makeText(EnterActivity.this,"用户名或密码不正确，请重新输入",Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+
+                                }
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                                System.err.println("创建数据库连接异常.");
+                            }
+                        }
+                    }).start();
+
                 }
             }
         });
