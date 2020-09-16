@@ -57,21 +57,27 @@ public class BioMeasuren extends AppCompatActivity {
     private void initOld(){
         Old wang=new Old("王老人","1号",R.drawable.cutehead);
         oldList.add(wang);
-        Old liu=new Old("刘老人","2号",R.drawable.cutehead);
-        oldList.add(liu);
-        Old wu=new Old("吴老人","3号",R.drawable.cutehead);
-        oldList.add(wu);
-        Old lin=new Old("林老人","4号",R.drawable.cutehead);
-        oldList.add(lin);
-        Old li=new Old("李老人","5号",R.drawable.cutehead);
+        Old li=new Old("李老人","2号",R.drawable.cutehead);
         oldList.add(li);
-        Old sun=new Old("孙老人","6号",R.drawable.cutehead);
+        Old sun=new Old("孙老人","3号",R.drawable.cutehead);
         oldList.add(sun);
-        Old lin2=new Old("林老人","7号",R.drawable.cutehead);
-        oldList.add(lin2);
-        Old li2=new Old("李老人","8号",R.drawable.cutehead);
-        oldList.add(li2);
-        Old sun2=new Old("孙老人","9号",R.drawable.cutehead);
-        oldList.add(sun2);
+        Old zhao=new Old("赵老人","4号",R.drawable.cutehead);
+        oldList.add(zhao);
+        Old qian=new Old("钱老人","5号",R.drawable.cutehead);
+        oldList.add(qian);
+        Old lin=new Old("林老人","6号",R.drawable.cutehead);
+        oldList.add(lin);
+        Old xu =new Old("许老人","7号",R.drawable.cutehead);
+        oldList.add(xu);
+        Old cai=new Old("蔡老人","8号",R.drawable.cutehead);
+        oldList.add(cai);
+        Old tian=new Old("田老人","9号",R.drawable.cutehead);
+        oldList.add(tian);
+        Old ou=new Old("欧老人","10号",R.drawable.cutehead);
+        oldList.add(ou);
+        Old yang=new Old("杨老人","11号",R.drawable.cutehead);
+        oldList.add(yang);
+        Old jiang=new Old("江老人","12号",R.drawable.cutehead);
+        oldList.add(jiang);
     }
 }

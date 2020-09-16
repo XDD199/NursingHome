@@ -64,14 +64,15 @@
             android:id="@+id/data_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorWhite"
             android:orientation="vertical"
             android:layout_weight="4">
 
             <Button
-                android:id="@+id/data_button1"
+                android:id="@+id/bt_xueya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/bt_record_selector"
                 android:text="血  压"
                 android:textSize="14sp"
                 android:textColor="#ff554a"/>
@@ -83,10 +84,10 @@
 
 
             <Button
-                android:id="@+id/data_button2"
+                android:id="@+id/bt_xuetang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/bt_record_selector"
                 android:text="血  糖"
                 android:textSize="14sp"
                 android:textColor="#ff554a"/>
@@ -98,10 +99,10 @@
 
 
             <Button
-                android:id="@+id/data_button3"
+                android:id="@+id/bt_xueyang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/bt_record_selector"
                 android:text="血  氧"
                 android:textSize="14sp"
                 android:textColor="#ff554a"/>
@@ -113,10 +114,10 @@
 
 
             <Button
-                android:id="@+id/data_button4"
+                android:id="@+id/bt_geiyao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/bt_record_selector"
                 android:text="给  药"
                 android:textSize="14sp"
                 android:textColor="#ff554a"/>
@@ -128,10 +129,10 @@
 
 
             <Button
-                android:id="@+id/data_button5"
+                android:id="@+id/bt_paixie"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/bt_record_selector"
                 android:text="排  泄"
                 android:textSize="14sp"
                 android:textColor="#ff554a"/>
@@ -142,10 +143,10 @@
                 android:background="#fed1ce"/>
 
             <Button
-                android:id="@+id/data_button6"
+                android:id="@+id/bt_shuifen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/bt_record_selector"
                 android:text="水  分"
                 android:textSize="14sp"
                 android:textColor="#ff554a"/>
@@ -157,10 +158,10 @@
 
 
             <Button
-                android:id="@+id/data_button7"
+                android:id="@+id/bt_yinshi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff"
+                android:background="@drawable/bt_record_selector"
                 android:text="饮  食"
                 android:textSize="14sp"
                 android:textColor="#ff554a"/>
@@ -175,6 +176,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#fff"
             android:layout_weight="1">
 
             <ImageView

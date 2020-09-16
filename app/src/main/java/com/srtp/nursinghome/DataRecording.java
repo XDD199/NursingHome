@@ -22,5 +22,76 @@ public class DataRecording extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //测量按钮监听事件
+        Button xueya=(Button)findViewById(R.id.bt_xueya);
+        xueya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.requestFocus();
+                v.requestFocusFromTouch();
+            }
+        });
+
+        Button xueyang=(Button)findViewById(R.id.bt_xueyang);
+        xueyang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.requestFocus();
+                v.requestFocusFromTouch();
+            }
+        });
+
+        Button xuetang=(Button)findViewById(R.id.bt_xuetang);
+        xuetang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.requestFocus();
+                v.requestFocusFromTouch();
+            }
+        });
+
+        Button geiyao=(Button)findViewById(R.id.bt_geiyao);
+        geiyao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.requestFocus();
+                v.requestFocusFromTouch();
+            }
+        });
+
+        Button paixie=(Button)findViewById(R.id.bt_paixie);
+        paixie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.requestFocus();
+                v.requestFocusFromTouch();
+            }
+        });
+
+        Button shuifen=(Button)findViewById(R.id.bt_shuifen);
+        shuifen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.requestFocus();
+                v.requestFocusFromTouch();
+            }
+        });
+
+        Button yinshi=(Button)findViewById(R.id.bt_yinshi);
+        yinshi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.setFocusable(true);
+                v.requestFocus();
+                v.requestFocusFromTouch();
+            }
+        });
     }
 }

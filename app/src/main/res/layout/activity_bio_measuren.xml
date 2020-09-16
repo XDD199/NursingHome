@@ -8,6 +8,7 @@
     tools:context=".BioMeasuren">
 
     <LinearLayout
+        android:id="@+id/bio_titlr"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="48dp"
@@ -27,17 +28,20 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv_message"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bio_bottom">
         </androidx.recyclerview.widget.RecyclerView>
 
         <include layout="@layout/navigation"
+            android:id="@+id/bio_bottom"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_alignParentBottom="true"/>
+            android:layout_alignParentBottom="true"
+            />
     </RelativeLayout>
 </LinearLayout>
