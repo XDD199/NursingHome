@@ -6,25 +6,30 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class WorkTodoActivity extends AppCompatActivity {
+public class WorkTodoActivity extends AppCompatActivity{
 
+    private ListView listview;
 
-
+    //用户点击确定按钮时执行的函数
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_work_todo);
-
-        //获取listview
-        ListView listview = (ListView) findViewById(R.id.lv_workdata);
+        //初始化页面对象
+        init();
+        //将数据显示在页面上
+        initDate();
 
         //按钮
         Button toHome=(Button)findViewById(R.id.worktodo_title_back);
@@ -36,6 +41,17 @@ public class WorkTodoActivity extends AppCompatActivity {
             }
         });
 
+        ListView lv_workdata = (ListView)this.findViewById(R.id.lv_workdata);
+        System.out.println(lv_workdata);
+
+    }
+
+    public void init(){
+        listview = (ListView) findViewById(R.id.lv_workdata);
+    }
+
+
+    public void initDate(){
         //准备数据源
         List<Map<String, Object>> lv_workdata = new ArrayList<Map<String, Object>>();
         Map map = new HashMap<String, Object>();
@@ -118,12 +134,14 @@ public class WorkTodoActivity extends AppCompatActivity {
         map.put("event_time", "全天");
         lv_workdata.add(map);
 
-
         //准备适配器TodoAdapter
-        TodoAdapter adapter = new TodoAdapter(this);
+        TodoAdapter adapter = new TodoAdapter(lv_workdata, this);
         adapter.setLv_workdata(lv_workdata);
 
         //将适配器关联到listview
         listview.setAdapter(adapter);
+
     }
+
 }
+

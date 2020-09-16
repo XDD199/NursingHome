@@ -11,7 +11,7 @@ public class JDBCUtils {
     // 可以把几个字符串定义成常量：用户名，密码，URL，驱动类
     private static final String USER = "sqtp_456";
     private static final String PWD = "sqtp123456";
-    private static final String URL = "jdbc:mysql://rm-bp1tymfixa12tydv42o.mysql.rds.aliyuncs.com:3306/sqtp_one?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false";
+    private static final String URL = "jdbc:mysql://rm-bp1tymfixa12tydv42o.mysql.rds.aliyuncs.com:3306/sqtp_one?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&tcpRcvBuf=1024000";
     private static final String DRIVER = "com.mysql.jdbc.Driver";
 
     /**
@@ -36,6 +36,7 @@ public class JDBCUtils {
         }
 
     }
+
 
     /**
      * 关闭所有打开的资源

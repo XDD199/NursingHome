@@ -37,7 +37,6 @@ public class EnterActivity extends AppCompatActivity {
         mBtLoginEnter = findViewById(R.id.imagebutton_enter1);
         mEtLoginUsername = findViewById(R.id.edittext_enter1);
         mEtLoginPassword = findViewById(R.id.edittext_enter2);
-        String[] stAccount ={"5300","1316","4972"};
 
         //设置点击事件监听器
         mBtLoginEnter.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +47,8 @@ public class EnterActivity extends AppCompatActivity {
                 }else{
                     String account = mEtLoginUsername.getText().toString().trim();
                     String password = mEtLoginPassword.getText().toString().trim();
+
+                    //多线程
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
@@ -71,7 +72,7 @@ public class EnterActivity extends AppCompatActivity {
                                 }
 
 
-                                //账号5300
+                                //验证账户
                                 if (loginSuccess)
                                 {
                                     runOnUiThread(new Runnable() {
