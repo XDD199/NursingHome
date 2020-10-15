@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class nurse_notebook extends AppCompatActivity {
+public class UsingHelp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nurse_notebook);
+        setContentView(R.layout.personal_usinghelp);
         //getSupportActionBar().hide();
     }
     public void onClick(View v) {
@@ -22,26 +22,11 @@ public class nurse_notebook extends AppCompatActivity {
                 startActivity(intent);
                 break;
 
-            case R.id.Button_notebook_toread1:
+            case R.id.Button_notebook_toread:
                 intent = new Intent(this, nurse_notebook_read.class);
                 startActivity(intent);
                 break;
-            case R.id.Button_notebook_toread2:
-                intent = new Intent(this, nurse_notebook_read.class);
-                startActivity(intent);
-                break;
-            case R.id.Button_notebook_toread3:
-                intent = new Intent(this, nurse_notebook_read.class);
-                startActivity(intent);
-                break;
-            case R.id.Button_notebook_toread4:
-                intent = new Intent(this, nurse_notebook_read.class);
-                startActivity(intent);
-                break;
-            case R.id.Button_notebook_toread5:
-                intent = new Intent(this, nurse_notebook_read.class);
-                startActivity(intent);
-                break;
+
             case R.id.Button_notebook_add:
                 intent = new Intent(this, nurse_book_write.class);
                 startActivity(intent);
